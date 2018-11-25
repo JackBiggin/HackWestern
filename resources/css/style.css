@@ -89,7 +89,10 @@ body, html {
     color: white !important;
 }
 
-.modal{
+.modal-header{
+    background-color: #004445;
+}
+.modal-body{
     background-color: #004445;
 }
 /* Schedules */
