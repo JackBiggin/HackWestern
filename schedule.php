@@ -93,10 +93,10 @@ foreach($stmt as $row) {
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
         <li class="nav-item">
-          <a class="nav-link" href="./explore.html">Explore Journeys</a>
+          <a class="nav-link" href="./explore.php">Explore Journeys</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./itinerary.html">Itinerary</a>
+          <a class="nav-link" href="./schedule.php">Itinerary</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./about.html">About Us</a>
