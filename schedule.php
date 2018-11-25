@@ -129,7 +129,7 @@ foreach($stmt as $row) {
 </div>
 
 <!-- Modal -->
-<div class="modal fade bg-dark" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="max-width:1000px !important;">
     <div class="modal-content">
       <div class="modal-header">

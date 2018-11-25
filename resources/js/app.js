@@ -106,7 +106,7 @@ function populateNewEventModal(time) {
   }
 
   content += '</select><br><br>';
-  content += '<button class="float-right btn btn-primary" onclick=populateEventListModal(' + time + ')>Next</button>';
+  content += '<button class="float-right btn btn-primary btn-click" onclick=populateEventListModal(' + time + ')>Next</button>';
   $('#event-body').html(content);
 }
 
@@ -127,7 +127,7 @@ function populateEventListModal(time) {
 
       for(var place in data)
       {
-        content = content + "<li class=\"list-group-item\" id=\"ChoosenPlace\">" +
+        content = content + "<li class=\"list-group-item dark\" id=\"ChoosenPlace\">" +
                                   "<div class=\"row\">" +
                                         "<div class=\"col-md-3\">" +
                                             "<img src=\"" + data[place].photo + "\" style = \"width:100%\" />" +
@@ -136,7 +136,7 @@ function populateEventListModal(time) {
                                             "<b>Name    : </b>" + data[place].name + "<br>" +
                                             "<b>Address : </b>" + data[place].address + "<br>" +
                                             "<b>rating : </b>" + data[place].rating + " / 5 <br>" +
-                                            "<button class=\"float-right btn btn-primary\" onclick=\"finalizeSelection(" + time + ',\'' + encodeURI(data[place].place_id) + '\',\'' + encodeURI(data[place].name) + "\')\">Choose</button>" +
+                                            "<button class=\"float-right btn btn-primary btn-click\" onclick=\"finalizeSelection(" + time + ',\'' + encodeURI(data[place].place_id) + '\',\'' + encodeURI(data[place].name) + "\')\">Choose</button>" +
                                         "</div>" +
                                   "</div>" +
                             "</li>";
