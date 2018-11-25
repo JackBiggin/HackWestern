@@ -46,7 +46,7 @@ function openmodal(time, desc, placeid) {
 
             $('#event-name').html(data.name);
             $('#event-body').html(
-                '<div class=row>'
+                '<div class="row">' +
                 '<p class="col"> <b>Address : </b>' + data.address + '<br></p>' +
                 '<p class="col"> <b>Phone : </b>' + data.phone + '<br></p></div>' +
                 '<p>------------------------------------------</p>' +
