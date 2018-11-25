@@ -22,8 +22,7 @@ $items = '';
 $stmt = $pdo->prepare("SELECT * FROM schedules");
 $stmt->execute();
 foreach($stmt as $row) {
-  $items .= '<li class="list-group-item"><a href="./schedule.php?schedule='. $row['id'] .'">'.$row['name'].'</a></li>';
-
+  $items .= '<li class="list-group-item list-group-item-action lgi"><a href="./schedule.php?schedule='. $row['id'] .'">'.$row['name'].'</a></li>';
 }
 ?>
 <!DOCTYPE html>
@@ -70,9 +69,9 @@ foreach($stmt as $row) {
 <!-- Landing -->
 <div class="bg">
   <div class="container">
-      <h2>
+      <h1>
         Itinerary Name
-      </h2>
+      </h1>
       <div class="card">
       <ul class="list-group list-group-flush">
 
