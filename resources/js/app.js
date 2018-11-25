@@ -49,7 +49,7 @@ function openmodal(time, desc, placeid) {
                 '<div class="row">' +
                 '<p class="col"> <b>Address : </b>' + data.address + '<br></p>' +
                 '<p class="col"> <b>Phone : </b>' + data.phone + '<br></p></div>' +
-                '<p>------------------------------------------</p>' +
+                '<hr>' +
                 '<b>Open Now : </b>' + openNOW + '</p>' +
                 '<p><b>Sunday    : </b>' + weekOpening[0] + '<br>' +
                 '<b>Monday    : </b>' + weekOpening[1] + '<br>' +
@@ -58,7 +58,7 @@ function openmodal(time, desc, placeid) {
                 '<b>Thursday  : </b>' + weekOpening[4] + '<br>' +
                 '<b>Friday    : </b>' + weekOpening[5] + '<br>' +
                 '<b>Saturday  : </b>' + weekOpening[6] + '</p>' +
-                '<p>------------------------------------------</p>' +
+                '<hr>' +
                 '<p><b>Rating : </b>' + data.price + ' / 5</p>' +
                 '<img src="' + data.photo + '" style="width:100%"/>' +
                 '<p><b>Website : </b><a href="' + data.website + '" target=_BLANK>' + data.website + '</a></p>'

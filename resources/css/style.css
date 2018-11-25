@@ -89,6 +89,9 @@ body, html {
     color: white !important;
 }
 
+.modal{
+    background-color: #004445;
+}
 /* Schedules */
 .lgi{
     border-color: #6FB98F !important;
