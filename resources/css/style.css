@@ -25,7 +25,6 @@ body, html {
 .bg {
     /* The image used */
     background-image: url("https://source.unsplash.com//1980x1080/?nature,journey,travel,explore");
-    filter: blur(2px) grayscale(0.2); 
     /* Full height */
     min-height: 100vh;
 
