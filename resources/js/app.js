@@ -45,10 +45,12 @@ function openmodal(time, desc, placeid) {
             }
 
             $('#event-name').html(data.name);
-            $('#event-body').html('<p> <b>Address : </b>' + data.address + '<br>' +
-                '<b>Phone : </b>' + data.phone + '<br>' +
-                '<b>Open Now : </b>' + openNOW + '</p>' +
+            $('#event-body').html(
+                '<div class=row>'
+                '<p class="col"> <b>Address : </b>' + data.address + '<br></p>' +
+                '<p class="col"> <b>Phone : </b>' + data.phone + '<br></p></div>' +
                 '<p>------------------------------------------</p>' +
+                '<b>Open Now : </b>' + openNOW + '</p>' +
                 '<p><b>Sunday    : </b>' + weekOpening[0] + '<br>' +
                 '<b>Monday    : </b>' + weekOpening[1] + '<br>' +
                 '<b>Tuesday   : </b>' + weekOpening[2] + '<br>' +
@@ -58,7 +60,7 @@ function openmodal(time, desc, placeid) {
                 '<b>Saturday  : </b>' + weekOpening[6] + '</p>' +
                 '<p>------------------------------------------</p>' +
                 '<p><b>Rating : </b>' + data.price + ' / 5</p>' +
-                '<b>Photo:</b><img src="' + data.photo + '" style="width:100%"/>' +
+                '<img src="' + data.photo + '" style="width:100%"/>' +
                 '<p><b>Website : </b><a href="' + data.website + '" target=_BLANK>' + data.website + '</a></p>'
 
             );
@@ -127,7 +129,7 @@ function populateEventListModal(time) {
 
       for(var place in data)
       {
-        content = content + "<li class=\"list-group-item dark\" id=\"ChoosenPlace\">" +
+        content = content + "<li class=\"list-group-item bg-dark\" id=\"ChoosenPlace\">" +
                                   "<div class=\"row\">" +
                                         "<div class=\"col-md-3\">" +
                                             "<img src=\"" + data[place].photo + "\" style = \"width:100%\" />" +
