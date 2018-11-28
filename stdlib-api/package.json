@@ -1,0 +1,12 @@
+{
+  "name": "jackbiggin/hackwestern",
+  "version": "0.0.0",
+  "author": "JackBiggin",
+  "stdlib": {
+    "name": "jackbiggin/hackwestern",
+    "timeout": 10000
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5"
+  }
+}
